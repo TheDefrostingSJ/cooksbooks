@@ -1,25 +1,35 @@
 html {
   height: 99vh;
   width: 99vw;
-  background-color: black;
+  background-color: darkcyan;
 }
 
 body {
   background-color: lightblue;
-  min-width: 75%;
-  min-height: 75%;
-  max-width: 75%;
-  max-height: 75%;
+  min-width: 80%;
+  min-height: 80%;
+  max-width: 80%;
+  max-height: 80%;
   border: 2px solid black;
   margin: 100px auto 100px auto;
-  padding: 10%
 }
 
-h1 {
+#header {
+  background-color: lightgoldenrodyellow;
+  text-align: center;
   color: navy;
-  margin-left: 20px;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  size: 5em;
 }
 
-.wrapper {
+#content {
+  background-color: lightcoral;
+  width: 100%;
+  height: 100%;
   display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
 }
