@@ -1,8 +1,25 @@
+html {
+  height: 99vh;
+  width: 99vw;
+  background-color: black;
+}
+
 body {
   background-color: lightblue;
+  min-width: 75%;
+  min-height: 75%;
+  max-width: 75%;
+  max-height: 75%;
+  border: 2px solid black;
+  margin: 100px auto 100px auto;
+  padding: 10%
 }
 
 h1 {
   color: navy;
   margin-left: 20px;
+}
+
+.wrapper {
+  display: grid;
 }

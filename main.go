@@ -1,7 +1,7 @@
 // Author Sean Joyce <seanjoyce.012@gmail.com
 // Data 09/2020
 
-//..\cooksbooks$: cls && go build cmd/main.go && main.exe
+// cls && go build cmd/main.go && main.exe
 
 package main
 
@@ -69,6 +69,9 @@ func main() {
 	fmt.Println("\n\nhttp://localhost:8080/view/index")
 
 	http.HandleFunc("/view/", makeHandler(viewHandler))
+
+  fs := http.FileServer(http.Dir("./web/static"))
+  http.Handle("/web/static/", http.StripPrefix("/web/static/", fs))
 
 	s := &http.Server{
 		Addr:           ":8080",

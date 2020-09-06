@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
- <!-- TODO(sjoyce): Clean up import paths to not give away file structure -->
-<link rel="stylesheet" type="text/css" href="../../web/static/css/main.css">
-<script src="../../web/static/js/pageview.js"></script>
-</head>
-<body>
+  <head>
+    <title>Page Title</title>
+    <!-- TODO(sjoyce): Clean up import paths to not give away file structure -->
+    <link rel="stylesheet" type="text/css" href="../../web/static/css/main.css">
+    <script src="../../web/static/js/pageview.js"></script>
+  </head>
+  <body>
+    <h1>{{.Title}}</h1>
+    <p id="demo"></p>
 
-<h1>{{.Title}}</h1>
-<p>This is a paragraph. {{.NumberOne}}</p>
-
-<p id="demo"></p>
-
-</body>
+    <div class="wrapper">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+    </div>
+  </body>
 </html>
 
 <script>
-  let num1 = {{.NumberOne}}
+  let num1 = {{.NumberOne}};
   document.getElementById("demo").innerHTML = myFunction(num1, {{.NumberTwo}});
 </script>
 
