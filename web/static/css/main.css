@@ -1,9 +1,14 @@
+* {
+  background-color: #595959;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 html {
-  background-color: darkcyan;
+  background-color: white;
 }
 
 body {
-  background-color: lightblue;
   display: grid;
   /* https://css-tricks.com/snippets/css/complete-guide-grid/ */
   grid-template-columns: repeat(10, 1fr);
@@ -15,20 +20,40 @@ html, body {
   height: 100%;
 }
 
+#logo {
+  padding: .5em;
+  color: white;
+  grid-area: 1 / 1 / 1 / 1;
+  border: .5em solid;
+  border-color: #595959 greenyellow greenyellow #595959;
+}
+
 #header {
-  background-color: lightgoldenrodyellow;
-  text-align: center;
-  color: navy;
-  grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  padding: .5em;
+  grid-area: 1 / 2 / 1 / 12;
+  box-sizing: border-box;
+  border: .5em solid;
+  border-color: #595959 #595959  greenyellow greenyellow;
 }
 
 #left_panel {
-  background-color: greenyellow;
+  padding: .5em;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: last-line;
+  box-sizing: border-box;
+  border: .5em solid;
+  border-color: greenyellow greenyellow #595959 #595959 ;
+}
+
+#content {
+  padding: .5em;
+  grid-column-start: 2;
+  grid-column-end: last-line;
+  grid-row-start: 2;
+  grid-row-end: last-line;
+  box-sizing: border-box;
+  border: .5em solid;
+  border-color: greenyellow #595959 #595959 greenyellow;
 }
