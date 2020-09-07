@@ -2,6 +2,7 @@
 // Data 09/2020
 
 // cls && go build cmd/main.go && main.exe
+// cls && del main.exe && go build main.go && main.exe
 
 package main
 
