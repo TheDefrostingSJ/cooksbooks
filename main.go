@@ -1,4 +1,4 @@
-// Author Sean Joyce <seanjoyce.012@gmail.com
+// Author Sean Joyce <seanjoyce.012@gmail.com>
 // Data 09/2020
 
 // cls && go build cmd/main.go && main.exe
